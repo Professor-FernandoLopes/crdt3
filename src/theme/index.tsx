@@ -41,37 +41,37 @@ export function colors(darkMode: boolean): Colors {
     black,
 
     // text
-    text1: darkMode ? '#FFFFFF' : 'grey',
-    text2: darkMode ? '#C3C5CB' : '#565A69',
-    text3: darkMode ? '#6C7284' : '#888D9B',
+    text1: darkMode ? '#FFFFFF' : '#FFFFFF',
+    text2: darkMode ? '#C3C5CB' : '#FFFFFF',
+    text3: darkMode ? '#6C7284' : '#FFFFFF',
     text4: darkMode ? '#565A69' : '#C3C5CB',
-    text5: darkMode ? '#2C2F36' : '#EDEEF2',
+    text5: darkMode ? '#2C2F36' : '#4e854f',
 
     // backgrounds / greys
-    bg1: darkMode ? '#1a2c3f' : '#142e46',
+    bg1: darkMode ? '#4e854f' : '#142e46',
     bg2: darkMode ? '#1a2c3f' : '#1a2c3f',
-    bg3: darkMode ? '#1a2c3f' : '#1a2c3f',
-    bg4: darkMode ? '#1a2c3f' : '#CED0D9',
-    bg5: darkMode ? '#1a2c3f' : '#888D9B',
+    bg3: darkMode ? '#1a2c3f' : '#4e854f',
+    bg4: darkMode ? '#1a2c3f' : '#4e854f',
+    bg5: darkMode ? '#1a2c3f' : '#4e854f',
 
     //specialty colors
-    modalBG: darkMode ? '#1a2c3f' : '#1a2c3f',
-    advancedBG: darkMode ? '#1a2c3f' : '#1a2c3f',
+    modalBG: darkMode ? '#1a2c3f' : '#20bf23',
+    advancedBG: darkMode ? '#1a2c3f' : '#4e854f',
 
     //primary colors
-    primary1: darkMode ? '#1a2c3f' : '#2d909a',
-    primary2: darkMode ? '#1a2c3f' : '#17a2b8',
-    primary3: darkMode ? '#1a2c3f' : '#17a2b8',
-    primary4: darkMode ? '#1a2c3f' : '#17a2b8',
-    primary5: darkMode ? '#1a2c3f' : '#17a2b8',
+    primary1: darkMode ? '#1a2c3f' : '#4e854f',
+    primary2: darkMode ? '#1a2c3f' : '#4e854f',
+    primary3: darkMode ? '#1a2c3f' : '#4e854f',
+    primary4: darkMode ? '#1a2c3f' : '#4e854f',
+    primary5: darkMode ? '#1a2c3f' : '#4e854f',
 
     // color text
     primaryText1: darkMode ? '#6da8ff' : 'white',
 
     // secondary colors
-    secondary1: darkMode ? '#2d909a' : '#27ae60',
-    secondary2: darkMode ? '#1a2c3f' : '#2d909a',
-    secondary3: darkMode ? '#1a2c3f' : '#2d909a',
+    secondary1: darkMode ? '#2d909a' : '#4e854f',
+    secondary2: darkMode ? '#1a2c3f' : '#4e854f',
+    secondary3: darkMode ? '#1a2c3f' : '#4e854f',
 
     // other
     red1: '#FD4040',
@@ -99,7 +99,7 @@ export function theme(darkMode: boolean): DefaultTheme {
     },
 
     //shadows
-    shadow1: darkMode ? '#1a2c3f' : '#1a2c3f',
+    shadow1: darkMode ? '#4e854f' : '#4e854f',
 
     // media queries
     mediaWidth: mediaWidthTemplates,
