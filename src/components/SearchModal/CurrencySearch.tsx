@@ -18,7 +18,6 @@ import Row, { RowBetween, RowFixed } from '../Row'
 import CommonBases from './CommonBases'
 import CurrencyList from './CurrencyList'
 
-
 import { filterTokens, useSortedTokensByQuery } from './filtering'
 import { useTokenComparator } from './sorting'
 import { PaddedColumn, SearchInput, Separator } from './styleds'
@@ -189,9 +188,7 @@ export function CurrencySearch({
           />
         </Row>
         {showCommonBases && (
-          
           // on select handleCurrencySelect
-
 
           <CommonBases chainId={chainId} onSelect={handleCurrencySelect} selectedCurrency={selectedCurrency} />
         )}
