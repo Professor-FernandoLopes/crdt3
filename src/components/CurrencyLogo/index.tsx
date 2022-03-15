@@ -48,10 +48,9 @@ export default function CurrencyLogo({
     return []
   }, [currency, uriLocations])
 
-  
   if (currency === ETHER) {
     return <StyledEthereumLogo src={EthereumLogo} size={size} style={style} />
-  } 
+  }
 
   return <StyledLogo size={size} srcs={srcs} alt={`${currency?.symbol ?? 'token'} logo`} style={style} />
 }

@@ -11,9 +11,7 @@ import styled from 'styled-components'
 //import LogoDark from '../../assets/svg/logo_white.svg'
 import { useActiveWeb3React } from '../../hooks'
 //import { useDarkModeManager } from '../../state/user/hooks'
-import { useETHBalances} from '../../state/wallet/hooks'
-
-
+import { useETHBalances } from '../../state/wallet/hooks'
 
 import { YellowCard } from '../Card'
 
@@ -124,8 +122,6 @@ const AccountElement = styled.div<{ active: boolean }>`
   }
 `
 
-
-
 const HideSmall = styled.span`
   ${({ theme }) => theme.mediaWidth.upToSmall`
     display: none;
@@ -165,13 +161,15 @@ const Title = styled.a`
   }
 `
 
- {/*const UniIcon = styled.div`
+{
+  /*const UniIcon = styled.div`
   transition: transform 0.3s ease;
   :hover {
     transform: rotate(-5deg);
   }
 `
-*/ }
+*/
+}
 const activeClassName = 'ACTIVE'
 
 const StyledNavLink = styled(NavLink).attrs({
@@ -200,8 +198,6 @@ const StyledNavLink = styled(NavLink).attrs({
     color: ${({ theme }) => darken(0.1, theme.text1)};
   }
 `
-
-
 
 export const StyledMenuButton = styled.button`
   position: relative;
@@ -244,13 +240,10 @@ export default function Header() {
   const { t } = useTranslation()
 
   const userEthBalance = useETHBalances(account ? [account] : [])?.[account ?? '']
-  
+
   //const [darkMode] = useDarkModeManager()
 
- 
-
   const [showUniBalanceModal, setShowUniBalanceModal] = useState(false)
-
 
   return (
     <HeaderFrame>
@@ -260,14 +253,13 @@ export default function Header() {
       </Modal>
       <HeaderRow>
         <Title href=".">
-        { /*
+          {/*
           <UniIcon>
             <img width={'24px'} src={darkMode ? LogoDark : Logo} alt="logo" />
           </UniIcon>
-        */ }
-
+        */}
         </Title>
-        
+
         <HeaderLinks>
           <StyledNavLink id={`swap-nav-link`} to={'/swap'}>
             {t('CRDT')}
@@ -285,8 +277,6 @@ export default function Header() {
           >
             {t('pool')} {/** aqui ativa pool para ir para o pool é só copiar ou retirar a palavra pool */}
           </StyledNavLink>
-         
-          
         </HeaderLinks>
       </HeaderRow>
       <HeaderControls>
@@ -296,8 +286,7 @@ export default function Header() {
               <NetworkCard title={NETWORK_LABELS[chainId]}>{NETWORK_LABELS[chainId]}</NetworkCard>
             )}
           </HideSmall>
-          
-          
+
           <AccountElement active={!!account} style={{ pointerEvents: 'auto' }}>
             {account && userEthBalance ? (
               <BalanceText style={{ flexShrink: 0 }} pl="0.75rem" pr="0.5rem" fontWeight={500}>
@@ -307,10 +296,7 @@ export default function Header() {
             <Web3Status />
           </AccountElement>
         </HeaderElement>
-        <HeaderElementWrap>
-          
-         { /* <Menu /> */}
-        </HeaderElementWrap>
+        <HeaderElementWrap>{/* <Menu /> */}</HeaderElementWrap>
       </HeaderControls>
     </HeaderFrame>
   )
