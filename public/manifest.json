@@ -4,7 +4,7 @@
   "homepage_url": "https://crdt.io/",
   "icons": [
     {
-      "src": "./images/192x192_App_Icon.png",
+      "src": "./images/favicon-132x132.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
