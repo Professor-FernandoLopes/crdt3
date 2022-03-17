@@ -275,7 +275,7 @@ export default function Header() {
               pathname.startsWith('/find')
             }
           >
-            {t('pool')} {/** aqui ativa pool para ir para o pool é só copiar ou retirar a palavra pool */}
+            {t('')} {/** aqui ativa pool para ir para o pool é só copiar ou retirar a palavra pool */}
           </StyledNavLink>
         </HeaderLinks>
       </HeaderRow>
