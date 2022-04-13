@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { PaddedColumn, Separator } from './styleds'
 import { RowBetween } from 'components/Row'
-import { ArrowLeft } from 'react-feather'
+//import { ArrowLeft } from 'react-feather'
 import { Text } from 'rebass'
 import { CloseIcon } from 'theme'
 import styled from 'styled-components'
@@ -61,9 +61,9 @@ export default function Manage({
     <Wrapper>
       <PaddedColumn>
         <RowBetween>
-          <ArrowLeft style={{ cursor: 'pointer' }} onClick={() => setModalView(CurrencyModalView.search)} />
+          
           <Text fontWeight={500} fontSize={20}>
-            Manage
+            
           </Text>
           <CloseIcon onClick={onDismiss} />
         </RowBetween>

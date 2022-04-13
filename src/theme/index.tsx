@@ -42,36 +42,36 @@ export function colors(darkMode: boolean): Colors {
 
     // text
     text1: darkMode ? '#FFFFFF' : '#FFFFFF',
-    text2: darkMode ? '#C3C5CB' : '#FFFFFF',
-    text3: darkMode ? '#6C7284' : '#FFFFFF',
+    text2: darkMode ? '#FFFFFF' : '#FFFFFF',
+    text3: darkMode ? '#FFFFFF' : '#FFFFFF',
     text4: darkMode ? '#565A69' : '#C3C5CB',
-    text5: darkMode ? '#2C2F36' : '#4e854f',
+    text5: darkMode ? '#2C2F36' : '#2C2F36',
 
     // backgrounds / greys
     bg1: darkMode ? '#1a2c3f' : '#142e46',
-    bg2: darkMode ? '#1a2c3f' : '#1a2c3f',
-    bg3: darkMode ? '#1a2c3f' : '#4e854f',
-    bg4: darkMode ? '#1a2c3f' : '#4e854f',
-    bg5: darkMode ? '#1a2c3f' : '#4e854f',
+    bg2: darkMode ? '#142e46' : '#1a2c3f',
+    bg3: darkMode ? '#4e854f' : '#4e854f',
+    bg4: darkMode ? '#4e854f' : '#4e854f',
+    bg5: darkMode ? '#4e854f' : '#4e854f',
 
     //specialty colors
-    modalBG: darkMode ? '#1a2c3f' : '#20bf23',
-    advancedBG: darkMode ? '#1a2c3f' : '#4e854f',
+    modalBG: darkMode ? '#black' : '#1a2c3f',
+    advancedBG: darkMode ? '#1a2c3f' : '#1a2c3f',
 
     //primary colors
-    primary1: darkMode ? '#1a2c3f' : '#4e854f',
-    primary2: darkMode ? '#1a2c3f' : '#4e854f',
-    primary3: darkMode ? '#1a2c3f' : '#4e854f',
-    primary4: darkMode ? '#1a2c3f' : '#4e854f',
-    primary5: darkMode ? '#1a2c3f' : '#4e854f',
+    primary1: darkMode ? '#4e854f' : '#4e854f',
+    primary2: darkMode ? '#4e854f' : '#4e854f',
+    primary3: darkMode ? '#4e854f' : '#4e854f',
+    primary4: darkMode ? '#4e854f' : '#4e854f',
+    primary5: darkMode ? '#4e854f' : '#4e854f',
 
     // color text
-    primaryText1: darkMode ? '#6da8ff' : 'white',
+    primaryText1: darkMode ? 'white' : 'white',
 
     // secondary colors
-    secondary1: darkMode ? '#2d909a' : '#4e854f',
-    secondary2: darkMode ? '#1a2c3f' : '#4e854f',
-    secondary3: darkMode ? '#1a2c3f' : '#4e854f',
+    secondary1: darkMode ? '#2d909a' : '#1a2c3f',
+    secondary2: darkMode ? '#1a2c3f' : '#1a2c3f',
+    secondary3: darkMode ? '#1a2c3f' : '#1a2c3f',
 
     // other
     red1: '#FD4040',
