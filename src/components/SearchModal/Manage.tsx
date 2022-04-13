@@ -61,10 +61,7 @@ export default function Manage({
     <Wrapper>
       <PaddedColumn>
         <RowBetween>
-          
-          <Text fontWeight={500} fontSize={20}>
-            
-          </Text>
+          <Text fontWeight={500} fontSize={20}></Text>
           <CloseIcon onClick={onDismiss} />
         </RowBetween>
       </PaddedColumn>
