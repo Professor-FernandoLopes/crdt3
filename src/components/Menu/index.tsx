@@ -106,23 +106,18 @@ export default function Menu() {
       {open && (
         <MenuFlyout>
           <MenuItem id="link" href="">
-            
             Ethereum
           </MenuItem>
           <MenuItem id="link" href="">
-            
             Polygon
           </MenuItem>
-          <MenuItem id="link" href=''>
-        
+          <MenuItem id="link" href="">
             Optimism
           </MenuItem>
           <MenuItem id="link" href="">
-            
             Arbitrum
           </MenuItem>
           <MenuItem id="link" href="">
-            
             Avalanche
           </MenuItem>
           {account && (

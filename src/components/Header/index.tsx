@@ -7,7 +7,6 @@ import { useTranslation } from 'react-i18next'
 
 import styled from 'styled-components'
 
-
 import { useActiveWeb3React } from '../../hooks'
 import { useDarkModeManager } from '../../state/user/hooks'
 import { useETHBalances, useAggregateUniBalance } from '../../state/wallet/hooks'
@@ -28,7 +27,6 @@ import { useUserHasSubmittedClaim } from '../../state/transactions/hooks'
 import { Dots } from '../swap/styleds'
 import Modal from '../Modal'
 import UniBalanceContent from './UniBalanceContent'
-
 
 const HeaderFrame = styled.div`
   display: grid;
@@ -180,8 +178,6 @@ const Title = styled.a`
   }
 `
 
-
-
 const activeClassName = 'ACTIVE'
 
 const StyledNavLink = styled(NavLink).attrs({
@@ -290,9 +286,6 @@ export default function Header() {
   const [showUniBalanceModal, setShowUniBalanceModal] = useState(false)
   const showClaimPopup = useShowClaimPopup()
 
- 
-  
-
   return (
     <HeaderFrame>
       <ClaimModal />
@@ -300,9 +293,7 @@ export default function Header() {
         <UniBalanceContent setShowUniBalanceModal={setShowUniBalanceModal} />
       </Modal>
       <HeaderRow>
-        <Title href=".">
-          
-        </Title>
+        <Title href="."></Title>
         <HeaderLinks>
           <StyledNavLink id={`swap-nav-link`} to={'/swap'}>
             {t('CRDT')}
@@ -320,11 +311,8 @@ export default function Header() {
           >
             {t('')}
           </StyledNavLink>
-         
-         
-          <StyledExternalLink id={`stake-nav-link`} href={''}>
-          
-          </StyledExternalLink>
+
+          <StyledExternalLink id={`stake-nav-link`} href={''}></StyledExternalLink>
         </HeaderLinks>
       </HeaderRow>
       <HeaderControls>
@@ -346,7 +334,6 @@ export default function Header() {
           )}
           {!availableClaim && aggregateBalance && (
             <UNIWrapper onClick={() => setShowUniBalanceModal(true)}>
-             
               <CardNoise />
             </UNIWrapper>
           )}
