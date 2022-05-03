@@ -4,6 +4,7 @@ import { Text } from 'rebass'
 import { NavLink } from 'react-router-dom'
 import { darken } from 'polished'
 import { useTranslation } from 'react-i18next'
+import logo from '../../components/Logo/logo.png'
 
 import styled from 'styled-components'
 
@@ -294,9 +295,11 @@ export default function Header() {
       </Modal>
       <HeaderRow>
         <Title href="."></Title>
+        <img src={logo} style={{width:"50px"}} alt="Logo" />
         <HeaderLinks>
+         
           <StyledNavLink id={`swap-nav-link`} to={'/swap'}>
-            {t('CRDT')}
+            {t('')}
           </StyledNavLink>
           <StyledNavLink
             id={`pool-nav-link`}
